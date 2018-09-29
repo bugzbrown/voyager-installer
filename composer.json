@@ -1,17 +1,22 @@
 {
-    "name": "laravel/installer",
-    "description": "Laravel application installer.",
-    "keywords": ["laravel"],
+    "name": "bugzbrown/voyager-installer",
+    "description": "A voyager installer forked from Laravel's official application installer.",
+    "keywords": ["laravel", "voyager"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Taylor Otwell",
+            "name": "Taylor Otwell (original laravel installer Author)",
             "email": "taylorotwell@gmail.com"
+        },
+        {
+            "name": "Gregory Brown",
+            "email": "bugzbrown@gmail.com"
         }
+
     ],
     "autoload": {
         "psr-4": {
-            "Laravel\\Installer\\Console\\": "src/"
+            "Bugzbrown\\VoyagerInstaller\\Console\\": "src/"
         }
     },
     "require": {
@@ -22,6 +27,6 @@
         "symfony/process": "~3.0|~4.0"
     },
     "bin": [
-        "laravel"
+        "voyager"
     ]
 }

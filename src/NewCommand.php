@@ -62,6 +62,8 @@ class NewCommand extends Command
         $composer = $this->findComposer();
 
         $commands = [
+            $composer.' require tcg/voyager',
+            $composer.' require orangehill/iseed:dev-master',
             $composer.' install --no-scripts',
             $composer.' run-script post-root-package-install',
             $composer.' run-script post-create-project-cmd',
@@ -91,6 +93,8 @@ class NewCommand extends Command
         });
 
         $output->writeln('<comment>Application ready! Build something amazing.</comment>');
+        $output->writeln('<comment>Setup you database and run</comment>');
+        $output->writeln('<comment>php artisan voyager:install</comment>');
     }
 
     /**
