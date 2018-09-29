@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Installer\Console;
+namespace Bugzbrown\VoyagerInstaller\Console;
 
 use ZipArchive;
 use RuntimeException;

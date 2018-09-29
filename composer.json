@@ -12,7 +12,6 @@
             "name": "Gregory Brown",
             "email": "bugzbrown@gmail.com"
         }
-
     ],
     "autoload": {
         "psr-4": {
