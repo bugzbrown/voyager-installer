@@ -22,7 +22,7 @@ iSeed is a simple but nevertheless essential install for anybody doing serious L
 Do like you would with Laravel...
 
 ```
-voyager new project-name
+voyager-installer new project-name
 ```
 
 This will create a new project folder **project-name** in the current directory, all ready with the dependencies installed.. Follow the short instructions at the end of the installer and get up and running in a jiffy.
@@ -30,26 +30,27 @@ This will create a new project folder **project-name** in the current directory,
 ## Quick install overview
 
 ### Step 1 - Create a new project
-```
-voyager new project-name
+```bash
+composer require global bugzbrown/voyager-installer
+voyager-installer new project-name
 ```
 ### Step 2 - Database and .Env
 Create a database for use with your project and edit your .env file in the root of your project folder.
 
 ### Step 3 - Install Voyager
 from the root of your project directory
-```
+```bash
 php artisan voyager:install
 ```
 to install a default blank voyager project or
-```
+```bash
 php artisan voyager:install --with-dummy
 ```
 to install some sample data in your voyager instalation.
 
 ### Step 4 - Create and Admin User
 If you are using a blank install (like you most usually will), run this interactive command to create a user for your administration area. (repalce email@email.com with your desired email)
-```
+```bash
 php artisan voyager:admin email@email.com --create
 ```
 Just  answer the questions the interactive shell asks you and you're all setup.
