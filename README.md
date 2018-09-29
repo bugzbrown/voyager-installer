@@ -1,6 +1,7 @@
 # Voyager Installer
 
 This simple little script is a fork of github.com/laravel/installer.
+Version numbers will be bumpped based on Laravel's installer numbers since I plan to keep them in sync.
 
 ## About & Why
 I have recently doing a number of small quick projects using Voyager and Laravel. They are all, at most a week's worth of work and I find it boring to install Laravel, then Voyager and iSeed every time I need to spin up a new project.
